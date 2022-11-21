@@ -24,4 +24,9 @@
 
 .bg-bluedark {
     background-color: #006F82;
+    transition: all 0.2s;
+}
+
+.bg-bluedark:hover {
+    opacity: 0.8;
 }

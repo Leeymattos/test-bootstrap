@@ -16,9 +16,39 @@
 
 <body>
   <div class=" text-white bg-page">
-    <div class="container" id="1">
 
-      <h1 class="text-center fw-bold fs-1">Quanto Sobra</h1>
+    <nav class="navbar navbar-expand-lg bg-page2" id="#quantosobra">
+      <div class="container-fluid">
+        <a class="navbar-brand" href="#quantosobra">Quanto Sobra</a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
+          aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="#razoes"> Razões</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#informacoes">Informações</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#beneficios">Benefícios</a>
+            </li>
+
+            <li class="nav-item">
+              <a class="nav-link" href="#duvidas">Dúvidas</a>
+            </li>
+          </ul>
+          <form class="d-flex" role="search">
+            <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+            <button class="btn btn-outline-success" type="submit">Search</button>
+          </form>
+        </div>
+      </div>
+    </nav>
+
+    <div class="container">
       <div class="row">
         <div class="col-8 my-5">
           <h3 class="text-center fs-2 fw-bold">Planilha de Cadastro de Clientes e Fornecedores</h3>
@@ -117,8 +147,8 @@
             </div>
 
             <div class="mt-3">
-              <label class="mb-2" for="floatingSelect">Sua empresa é:</label>
-              <select class="form-select" id="floatingSelect" aria-label="Floating label select example">
+              <label class="mb-2" for="floatingSelect1">Sua empresa é:</label>
+              <select class="form-select" id="floatingSelect1" aria-label="Floating1 label select example">
                 <option selected>Selecione</option>
                 <option value="1">One</option>
                 <option value="2">Two</option>
@@ -127,8 +157,8 @@
             </div>
 
             <div class="mt-3">
-              <label class="mb-2" for="floatingSelect">Quantas pessoas têm na sua empresa?</label>
-              <select class="form-select" id="floatingSelect" aria-label="Floating label select example">
+              <label class="mb-2" for="floatingSelect2">Quantas pessoas têm na sua empresa?</label>
+              <select class="form-select" id="floatingSelect2" aria-label="Floating2 label select example">
                 <option selected>Selecione</option>
                 <option value="1">One</option>
                 <option value="2">Two</option>
@@ -137,8 +167,8 @@
             </div>
 
             <div class="mt-3">
-              <label class="mb-2" for="floatingSelect">Onde você usará a planilha?</label>
-              <select class="form-select" id="floatingSelect" aria-label="Floating label select example">
+              <label class="mb-2" for="floatingSelect3">Onde você usará a planilha?</label>
+              <select class="form-select" id="floatingSelect3" aria-label="Floating3 label select example">
                 <option selected>Selecione</option>
                 <option value="1">One</option>
                 <option value="2">Two</option>
@@ -151,38 +181,28 @@
               <input type="text" class="form-control" aria-describedby="conta">
             </div>
 
-            <button type="button" class="btn btn-submit mt-4 fw-bolder w-100 fs-5 h-60px text-white ">Receber
+            <button type="button" class="btn btn-danger mt-4 fw-bolder w-100 fs-5 h-60px text-white ">Receber
               Planilha</button>
-
-
-
-
-
-
-
-
           </form>
         </div>
       </div>
 
     </div>
 
-    <div class="bg-page2">
+    <div class="bg-page2" id="razoes">
       <div class="container" id="2">
         <div class="row">
           <p class="text-center fs-3 fw-bolder lh-1 mt-5">
-            4 Razões para utilizar uma planilha de
+            3 Razões para utilizar uma planilha de
             <span class="d-block mt-2 color-title ">
               Cadastro de Clientes e
               Fornecedores
             </span>
           </p>
 
-          </p>
+          <div class="row my-3">
 
-          <div class="row my-5">
-
-            <div class="col">
+            <div class="col-4 my-3">
               <div class="card rounded bg-gradient bg-dark d-flex justify-content-center align-items-center text-center"
                 style="width: 18rem;">
                 <img src="https://strapi.mkt.useawise.com/uploads/Capital_Direcionado_081de1735a.svg"
@@ -195,7 +215,7 @@
               </div>
             </div>
 
-            <div class="col">
+            <div class="col-4 my-3">
               <div class="card rounded bg-gradient bg-dark d-flex justify-content-center align-items-center text-center"
                 style="width: 18rem;">
                 <img src="https://strapi.mkt.useawise.com/uploads/Capital_Direcionado_081de1735a.svg"
@@ -208,20 +228,7 @@
               </div>
             </div>
 
-            <div class="col">
-              <div class="card rounded bg-gradient bg-dark d-flex justify-content-center align-items-center text-center"
-                style="width: 18rem;">
-                <img src="https://strapi.mkt.useawise.com/uploads/Organize_seus_Recebimentos_fac4023182.svg"
-                  class="card-img-top w-50" alt="...">
-                <div class="card-body">
-                  <h5 class="card-title">Card title</h5>
-                  <p class="card-text">Some quick example text to build on the card title and make up the bulk of the
-                    card's content.</p>
-                </div>
-              </div>
-            </div>
-
-            <div class="col">
+            <div class="col-4 my-3">
               <div class="card rounded bg-gradient bg-dark d-flex justify-content-center align-items-center text-center"
                 style="width: 18rem;">
                 <img src="https://strapi.mkt.useawise.com/uploads/Organize_seus_Recebimentos_fac4023182.svg"
@@ -236,7 +243,7 @@
 
             <div class="d-flex justify-content-center align-items-center mt-5">
               <a href="#"
-                class="d-flex align-items-center justify-content-center w-50 btn bg-bluedark h-60px text-white ">QUERO
+                class="d-flex align-items-center justify-content-center w-50 fs-5 fw-bolder btn bg-bluedark h-60px text-white ">QUERO
                 BAIXAR AGORA</a>
             </div>
 
@@ -246,15 +253,206 @@
     </div>
 
     <div>
-      <div class="container">
+      <div class="container d-flex flex-column align-items-center justify-content-center">
+        <h3 class=" mt-4">Cadastre Clientes e fornecedores</h3>
+
+        <p class="my-4 w-50 text-center ">
+          De forma simples, a Planilha de Cadastro de Clientes e
+          Fornecedores permite que tenha em mãos, sempre que
+          possível, todas as informações essenciais sobre seus clientes,
+          o que facilita a aproximação e a fidelização.
+        </p>
+
         <div class="row">
-          dyadgasugia
+
+          <div class="col-6 d-flex align-items-center justify-content-center">
+            <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="true">
+              <div class="carousel-indicators">
+                <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active"
+                  aria-current="true" aria-label="Slide 1"></button>
+                <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1"
+                  aria-label="Slide 2"></button>
+              </div>
+              <div class="carousel-inner">
+                <div class="carousel-item active">
+                  <img
+                    src="https://images.unsplash.com/photo-1504868584819-f8e8b4b6d7e3?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=876&q=80"
+                    class="d-block w-100" alt="...">
+                </div>
+                <div class="carousel-item">
+                  <img
+                    src="https://images.unsplash.com/photo-1434626881859-194d67b2b86f?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=874&q=80"
+                    class="d-block w-100" alt="...">
+                </div>
+              </div>
+              <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators"
+                data-bs-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Previous</span>
+              </button>
+              <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators"
+                data-bs-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Next</span>
+              </button>
+            </div>
+          </div>
+
+          <div class="col-6 d-flex flex-column align-items-center justify-content-center">
+            <p class="">
+              Com a planilha de Cadastro de Clientes e Fornecedores grátis você garante uma organização completa dos
+              dados, de forma que você nunca mais vai se perder na hora de contatar um fornecedor ou cliente.
+
+              Além disso, com esta planilha você terá sempre acesso fácil aos dados importantes de seus clientes, o que
+              ajudará você na hora de direcionar serviços ou promoções a eles.
+
+              A Planilha de Cadastro de Clientes e Fornecedores do QuantoSobra, além de facilitar a sua vida, é
+              gratuita, fácil de baixar e de usar.
+            </p>
+
+            <a href="#"
+              class="btn btn-danger w-75 mt-5 fw-bolder fs-5 h-60px d-flex justify-content-center align-items-center">QUERO
+              BAIXAR AGORA!</a>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="bg-page2" id="informacoes">
+      <div class="container d-flex flex-column align-items-center justify-content-center">
+        <h3 class="w-50 text-center mt-4 ">
+          Benefícios da Planilha de Cadastro de Clientes e Fornecedores
+        </h3>
+        <div class="row mt-4">
+          <div class="col-4">
+            <h4 class="color-title">
+              1-Organização
+            </h4>
+            <p>
+
+              Uma das principais vantagens da planilha de cadastro de clientes e fornecedores gratuita do QuantoSobra é
+              ter fácil acesso e controle destes dados, assim você não se perde na hora de contatar um fornecedor ou
+              cliente.
+
+              Você pode separar clientes e fornecedores por grupos, facilitando a organização e agilizando o acesso e a
+              busca no dia a dia corrido de atendimento, compras e vendas na sua empresa.
+            </p>
+
+            <h4 class="color-title">
+              2-Relacionamento
+            </h4>
+            <p>
+              Fidelize ainda mais os seus clientes usando a planilha gratuita de cadastro de clientes e fornecedores do
+              QuantoSobra. Cadastre clientes e faça análises da sua base de clientes constantemente. Identifique
+              tendências que seus
+            </p>
+          </div>
+
+          <div class="col-4">
+            <p>
+              clientes costumam seguir, produtos preferidos e períodos do mês e do ano em que eles preferem comprar e
+              crie campanhas mais assertivas para aproximar e reter seus clientes..
+
+              Manter seu cadastro de clientes sempre atualizado é fundamental para sua empresa. Baixe de graça a
+              planilha de cadastro de clientes e fornecedores e aproveite ao máximo os benefícios de ter seus clientes
+              sempre por perto.
+            </p>
+
+            <h4 class="color-title">
+              3-Objetivo
+            </h4>
+            <p>
+              Definir objetivos para o seu cadastro de clientes vai lhe ajudar a identificar quais informações você
+              precisará coletar de seus. Você pode, por exemplo, ficar em aumentar a fidelidade dos seus clientes por X
+              meses, vender mais para clientes específicos ou vender mais do que a média de compra para todos os seus
+              clientes recorrentes.
+            </p>
+          </div>
+
+          <div class="col-4">
+            <p>
+              Entenda quais clientes compram mais e quais não compram, quais são de alta prioridade, os últimos
+              compradores e tudo mais, através de um bom cadastro de clientes.
+            </p>
+
+            <h4 class="color-title">
+              4-Personalização
+            </h4>
+            <p>
+              Meça o sucesso do seu controle de clientes por meio da revisão dos dados cadastrados na sua planilha.
+              Acompanhar as atividades e resultados conseguidos conquistados a partir de ações mais próximas da sua base
+              de clientes é uma ótima maneira de saber se o trabalho do seu time de vendas está sendo bem feito.
+
+              Utilize o seu cadastro de clientes para oferecer um melhor atendimento ao cliente, personalizando a
+              experiência dele e fazendo com que seu vendedor, por exemplo, leve apenas produtos do interesse do cliente
+              até o mesmo.
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div id="beneficios">
+      <div class="container d-flex flex-column justify-content-center align-items-center text-center">
+        <h3 class=" mt-4">
+          Tire suas dúvidas sobre a planilha
+        </h3>
+
+        <h4 class="mt-4">
+          Para quem a planilha de cadastro de clientes e fornecedores é indicada?
+        </h4>
+
+        <p>
+          Serve para quem quer criar cadastros e gerenciar clientes aproveitando o máximo de dados obtido dele.
+          Identifique tendências do cliente, aumente a comunicação com ele e crie estratégias para usufruir melhor da
+          sua base.
+
+          Com a planilha de cadastro de clientes e fornecedores gratuita aqui do QuantoSobra, você pode medir o
+          sucesso do controle de cliente, de forma fácil e rápida.
+        </p>
+
+        <h4>
+          Não recebi o e-mail da planilha. O que fazer?
+        </h4>
+
+        <p>
+          Antes de tudo: mantenha a calma, você receberá a sua planilha.
+
+          O envio do e-mail com o material para download pode demorar alguns minutos. Muitos usuários baixam a planilha
+          ao mesmo tempo, e por isso nosso envio pode sofrer com pequenos atrasos.
+
+          Mas, caso você acha que há sim alguma coisa errada, siga os seguintes passos:
+
+          verifique se você preencheu o e-mail correto no momento do download.
+          verifique o seu e-mail. Dê uma olhada em todas as pastas (ex.: Promoções; Atualizações) e também na sua caixa
+          de SPAM. Busque por “mkt@quantosobra.com.br” na barra de busca do seu e-mail, dessa forma, caso já tenha
+          recbido o material, o resultado da pesquisa retornará positivo.
+          Se depois da busca você percebeu que realmente não recebeu o material, entre em contato com a gente no
+          “mkt@quantosobra.com.br”.
+
+          Para assegurar o recebimento do e-mail das planilhas que você baixar, faça isso: adicione o endereço
+          “mkt@quantosobra.com.br” aos contatos do seu e-mail. Dessa forma, você sempre receberá suas planilhas
+          gratuitas direto na caixa de entrada.
+        </p>
+      </div>
+    </div>
+
+    <div class="bg-page2" id="duvidas">
+      <div class="container d-flex flex-column justify-content-center align-items-center">
+        <p class="lh-1">Criado pelo Weslley Matos</p>
+        <div>
+          <a href="#">
+            <img src="https://cdn-icons-png.flaticon.com/512/1384/1384014.png" alt="" class="h-60px">
+          </a>
+          <a href="#">
+            <img src="https://cdn-icons-png.flaticon.com/512/1384/1384015.png" alt="" class="h-60px">
+          </a>
+
         </div>
       </div>
     </div>
 
   </div>
-
 
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
     integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
